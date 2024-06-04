@@ -75,8 +75,9 @@ void generate_project() {
   makefile_generator(mainfile, mainheaderfile, projectfoldername);
   std::cout << "Makefile generated making project..." << std::endl;
   system("make");
-  std::cout << "Finished making project...";
+  std::cout << "Finished making project..." << std::endl;
   sleep(3000);
+  system("clear");
   return;
 }
 
